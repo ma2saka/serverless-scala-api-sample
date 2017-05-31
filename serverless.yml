@@ -1,4 +1,4 @@
-service: serverless-api5
+service: serverless-scala-api-sample
 
 provider:
   name: aws
