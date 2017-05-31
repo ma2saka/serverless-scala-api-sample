@@ -1,9 +1,13 @@
- 使い方
+# 使い方
+
+## コードの取得
 
 ```
-git clone serverless-scala-api-sample
+git clone https://github.com/ma2saka/serverless-scala-api-sample
 cd serverless-scala-api-sample
 ```
+
+## プロジェクト名の変更
 
 serverless.yml を編集する
 
@@ -11,11 +15,13 @@ serverless.yml を編集する
 vi serverless.yml
 ```
 
-service name を編集して適当な名前に変える。
+service の名前を編集して適当な名前に変える。
 
 ```
 service: serverless-hogehoge
 ```
+
+## ビルドとデプロイ
 
 ビルドする。`target/` 以下に jar ファイルが出力される。
 
@@ -60,3 +66,8 @@ ServerlessDeploymentBucketName: serverless-hogehoge-dev-serverlessdeploymentbuck
 $ curl (クラウドフロントのドメイン)/dev/hello/world
 Hello World!
 ```
+
+## TODO
+
+- Api GatewayのRestrict化
+- 静的ファイルホスティング用のS3バケットの作成と CloudFront のオリジン追加
