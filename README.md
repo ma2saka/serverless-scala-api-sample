@@ -1,4 +1,14 @@
+# これは何か
+
+SERVERLESS Framework を利用し、aws-scala-sbt テンプレートを利用して生成したプロジェクトを用いて CloudFront - Api Gateway - Lambda Function と繋がるAPIを構築するサンプルです。
+
 # 使い方
+
+## 事前準備
+
+```
+npm install -g serverless
+```
 
 ## コードの取得
 
