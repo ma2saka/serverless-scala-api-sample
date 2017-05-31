@@ -9,8 +9,6 @@ provider:
 package:
   artifact: target/scala-2.12/hello.jar
 
-## In order to print out the hosted domain via `serverless info` we need to define the DomainName output for CloudFormation
-# info.endpoint
 functions:
   hello:
     handler: hello.ApiGatewayHandler
