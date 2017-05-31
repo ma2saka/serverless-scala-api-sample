@@ -66,7 +66,7 @@ ServiceEndpoint: https://fugafugafuga.execute-api.ap-northeast-1.amazonaws.com/d
 ServerlessDeploymentBucketName: serverless-hogehoge-dev-serverlessdeploymentbucket-uljjru24333sss
 ```
 
-ここで、三つのコンポーネントが作成されている。
+ここで、三つのコンポーネントが作成されている。関連するロールなども一緒に作られる。SERVERLESS Framrwork は CloudFormationを利用しているのでレシピは流用可能。
 
 - Lambda Function
 - Api Gateway
@@ -77,7 +77,16 @@ $ curl (クラウドフロントのドメイン)/dev/hello/world
 Hello World!
 ```
 
+## 使い終わったら消す
+
+```
+serverless remove
+```
+
+S3のバケットが消せなくて失敗するケースがあるので、あとからマネジメントコンソールで CloudFormation のリストを確認すること。
+
 ## TODO
 
 - Api GatewayのRestrict化
 - 静的ファイルホスティング用のS3バケットの作成と CloudFront のオリジン追加
+- java.util.Map を隠す
